@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "repl-nix-aboba"
+version = "0.1.0"
+description = ""
+authors = ["Replit user <<>>"]
+readme = "README.md"
+packages = [{include = "repl_nix_aboba"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = "^3.3.0"
+openai = "^1.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
