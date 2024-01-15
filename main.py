@@ -52,7 +52,7 @@ async def startBTN(callback: types.CallbackQuery):
 async def economicFacts(callback: types.CallbackQuery):
   builder = InlineKeyboardBuilder()
   builder.button(text=getPhrase("empty button"), callback_data="empty button")
-  builder.button(text=getPhrase("back"), callbck_data="start")
+  builder.button(text=getPhrase("back"), callback_data="start")
 
   await callback.message.edit_text(
     text=textsData["modes"][callback.data[:-5]]['discription'],
