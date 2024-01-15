@@ -61,6 +61,7 @@ async def economicFacts(callback: types.CallbackQuery):
 
 @dp.callback_query(lambda c: c.data == "empty button")
 async def emptyBTN(callback: types.CallbackQuery):
+  # Выводим уведомление сверху при нажатии на пустую кнопку
   await callback.answer(getPhrase("empty button pressed"), show_alert=False)
 
 @dp.callback_query(lambda c: c.data == "help") # Обработчик кнопки "Помощь"
